@@ -207,3 +207,52 @@ for i in range(n,0,-1):
     space+=1
     print()
     
+#pattern-19
+n=int(input())
+space=n-1
+star=1
+for i in range(n):
+    for i in range(space):
+        print(" ", end=" ")
+    for j in range(star):
+        print("*", end=" ")
+    print()
+    space=space-1
+    star=star+2
+space=1
+for i in range(n-1,0,-1):
+    for j in range(space):
+        print(" ",end=" ")
+    for j in range(2*i-1):
+        print("*",end=" ")
+    space+=1
+    print()     
+
+
+#pattern-20
+n=int(input())
+space=0
+for i in range(n,1,-1):
+    for j in range(space):
+        print(" ",end=" ")
+    for j in range(2*i-1):
+        print("*",end=" ")
+    space+=1
+    print()
+space=n-1
+star=1
+for i in range(n):
+    for i in range(space):
+        print(" ", end=" ")
+    for j in range(star):
+        print("*", end=" ")
+    print()
+    space=space-1
+    star=star+2
+
+
+
+
+
+
+
