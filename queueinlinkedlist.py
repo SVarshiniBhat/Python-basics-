@@ -16,7 +16,7 @@ def enqueue(head,val):
 
 def dequeue(head):
     if head==None:
-        print("queue is empty")
+        print("Queue is empty")
         return
     print(head.data)
     secondnode=head.next
@@ -25,13 +25,13 @@ def dequeue(head):
 
 def printFrontQueue(head):
     if head==None:
-        print("queue is empty")
+        print("Queue is empty")
         return
     print(head.data)
 
 def printqueue(head):
     if head==None:
-        print("queue is empty")
+        print("Queue is empty")
         return None
     cur=head
     while cur!=None:
