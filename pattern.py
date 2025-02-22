@@ -381,6 +381,206 @@ for i in range(n):
   * * * * * * * 
 * * * * * * * * * 
 
+#pattern 21
+n=int(input())
+v=1
+for i in range(1,n+1):
+     for j in range(i):
+         print(v,end=" ")
+         v=v+1
+     print()
+#output
+1
+2 3
+4 5 6
+7 8 9 10
+
+#pattern 22
+n=int(input())
+v=1
+for i in range(1,n+1):
+    print(" "*(n-i),end=" ")
+    for j in range(i):
+        print(v,end=" ")
+        v=v+1
+    print()
+#output
+4
+    1 
+   2 3 
+  4 5 6 
+ 7 8 9 10 
+
+#pattern 23
+n=int(input())
+v=1
+for i in range(1,n+1):
+    for j in range(i):
+        print(v**2,end=" ")
+        v=v+1
+    print()
+#output
+4
+1 
+4 9 
+16 25 36 
+49 64 81 100 
+
+#pattern 24
+ 
+n=int(input())
+v=1
+for i in range(n):
+    for j in range(2*i+1):
+        print(v**2,end=" ")
+        v=v+1
+    print()
+#output
+4
+1 
+4 9 16
+25 36 49 64 81
+100 121 144 169 196 225 256
+
+#pattern 25
+n=int(input())
+v=1
+for i in range(n):
+    for j in range(n):
+        if i==0 or i==n-1 or j==0 or j==n-1:
+            print("*",end=" ")
+        else:
+            print(v,end=" ")
+            v=v+1
+    print()
+#output
+4
+* * * * 
+* 1 2 *
+* 3 4 *
+* * * *
+
+
+#pattern 21
+
+
+#pattern 22 using while loop
+n=int(input())
+v=1
+i=1
+while i<n+1:
+    print(" "*(n-i),end=" ")
+    j=0
+    while j<i:
+        print(v,end=" ")
+        v=v+1
+        j=j+1
+    print()
+    i=i+1
+#output
+4
+    1 
+   2 3
+  4 5 6
+ 7 8 9 10
+
+#pattern 23 using while loop
+n=int(input())
+i=0
+v=1
+while i<n:
+    j=0
+    while j<i+1:
+        print(v**2,end=" ")
+        v=v+1
+        j=j+1
+    print()
+    i=i+1
+#output
+4
+1 
+4 9 
+16 25 36 
+49 64 81 100 
+
+
+#pattern 24 using while loop
+n=int(input())
+i=0
+v=1
+while i<n:
+    j=0
+    while j<2*i+1:
+        print(v**2,end=" ")
+        v=v+1
+        j=j+1
+    print()
+    i=i+1
+#output
+4
+1 
+4 9 16
+25 36 49 64 81
+100 121 144 169 196 225 256
+
+#pattern 25 using while loop
+n=int(input())
+v=1
+i=0
+while i<n:
+    j=0
+    while j<n:
+        if i==0 or i==n-1 or j==0 or j==n-1:
+            print("*",end=" ")
+        else:
+            print(v,end=" ")
+            v=v+1
+        j=j+1
+    print()
+    i=i+1
+#output
+4
+* * * * 
+* 1 2 *
+* 3 4 *
+* * * *
+
+   
+#pattern 26
+n=input()
+for i in range (len(n)):
+    for j in range(i,len(n)):
+        print(n[i:j+1],end=" ")
+    print()
+
+#output
+abcd
+a ab abc abcd 
+b bc bcd 
+c cd 
+d 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
